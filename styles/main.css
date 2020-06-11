@@ -1,0 +1,61 @@
+body{
+    height: 95%;
+    display: grid;
+    border: 5px solid black;
+    grid-template: 
+    "header header header" 10%
+    "nav nav nav" 5%
+    "aside main main" 1fr 
+    "aside main main" 1fr
+    "footer footer footer" 5%
+    /1fr 2fr 2fr 
+    ;
+ 
+}
+
+.grid-item{
+    border: 2px solid black;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav{
+    grid-area: nav;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+
+}
+.menu-btn{
+    background-color: tomato;
+    padding: 0.5%;
+    margin: auto;
+    width: 32%;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    
+}
+
+footer{
+    background-color: cadetblue;
+    height: 1fr;
+    grid-area: footer;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
