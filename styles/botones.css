@@ -1,0 +1,30 @@
+footer > a > button{
+    
+    /* height: 100%; */
+    
+
+
+    background-color: #b1f9b3;
+    color: black;
+}
+
+button{
+   
+    width: 100%;
+    height: 100%; 
+    
+    
+    
+
+
+    display: flex;
+    justify-content: center;
+    
+
+
+    background-color: #4c8c4a; 
+    
+    color: whitesmoke;
+    border-radius: 5%;
+
+}

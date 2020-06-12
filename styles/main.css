@@ -1,3 +1,6 @@
+@import "imgs.css";
+@import "botones.css";
+
 body{
     /* height: 100%; */
     display: grid;
@@ -41,24 +44,42 @@ nav{
 
 aside{
     grid-area: aside;
+    padding: 0.8%;
+    padding-top: 0;
+    margin-bottom: 5%;
 }
 
-#carousel-img{
+#carousel-aside{
     display: flex;
+
+    
 }
 
 main{
     grid-area: main;
+
+
     display: flex;
+    flex-direction: column;
+
+    
+    padding: 0.5%;
+    margin-bottom: 1px;
+    
+    
 
     background-color: #d2f5cf73;
     
 }
 
+
 footer{
-    height: 1fr;
-    grid-area: footer;
     
+    grid-area: footer;
+    width: 100%;
+
+    margin-top: 1px;
+
     display: flex;
     align-content: center;
     justify-content: center;
@@ -67,48 +88,16 @@ footer{
     color: white;
 }
 
-img{
 
-
-    width: 100%;
-}
-
-button{
-   
-    width: 100%;
-    height: 100%; 
-    
-    
-    
-
-
-    display: flex;
-    justify-content: center;
-    
-
-
-    background-color: #4c8c4a; 
-    
-    color: whitesmoke;
-    border-radius: 5%;
-
-}
 
 nav a{
     flex-grow: 1;
+    
 }
 
 
 
-footer > a > button{
-    
-    /* height: 100%; */
-    
 
-
-    background-color: #b1f9b3;
-    color: black;
-}
 /* 
 .perma-banner{
     position: fixed;
