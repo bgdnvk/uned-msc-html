@@ -1,6 +1,13 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.fa-github{
+    color: white;
+    font-size: 3rem;
+}
 
 img{
     width: 100%;
+    /* height: 19%; */
 }
 
 .img-main{
@@ -11,16 +18,10 @@ img{
     background-color: #80c683;
 }
 
-#carrousel-main{
-    
 
-    display: grid;
-    border: 5px solid #509556;
-    grid-template: 
-    "a a" 1fr
-    "b c" 1fr/1fr 1fr
-    ;
-}
+
+
+
 #img-camp-big{
     grid-area: a;
 }
@@ -30,3 +31,15 @@ img{
 #img-camp-uned{
     grid-area: c;
 }
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 800px){
+    .img-main{
+        height: 350px;
+    }
+
+    img{
+        height: 300px;
+    }
+
+
+} 

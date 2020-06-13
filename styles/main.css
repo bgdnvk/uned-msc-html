@@ -1,23 +1,28 @@
 @import "imgs.css";
 @import "botones.css";
+@import "fonts.css";
 
 body{
-    /* height: 100%; */
+    
+    background-color: #d2f5cf73;
+
     display: grid;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    
+
     grid-template: 
     "header header header" 7.5%
     "nav nav nav" 5%
-    "main main aside" 1fr 
     "main main aside" 1fr
-    "footer footer footer" 5%
+    "footer footer footer" 4.5%
     /2fr 2fr 1fr 
     ;
  
 }
 
 .grid-item{
-     border: 2px solid black; 
+     /* border: 2px solid black;  */
+     /* padding: 1%; */
 }
 
 header{
@@ -25,6 +30,7 @@ header{
     display: flex;
     justify-content: center;
     align-content: center;
+
 
     background-color:#003300;
     color: white;
@@ -51,8 +57,6 @@ aside{
 
 #carousel-aside{
     display: flex;
-
-    
 }
 
 main{
@@ -63,13 +67,27 @@ main{
     flex-direction: column;
 
     
-    padding: 0.5%;
-    margin-bottom: 1px;
+    height: fit-content;
+    padding: 1%;
+    /* padding: 0.5%;
+    margin-bottom: 1px; */
     
     
 
-    background-color: #d2f5cf73;
     
+    /* background-color: #d2f5cf73; */
+
+    
+}
+
+#carrousel-main{
+    
+    display: grid;
+    border: 1px solid #509556;
+    grid-template: 
+    "a a" 1fr
+    "b c" 1fr/1fr 1fr
+    ;
 }
 
 
@@ -78,7 +96,9 @@ footer{
     grid-area: footer;
     width: 100%;
 
-    margin-top: 1px;
+    margin-top: 0.01%;
+    /* padding: 1%; */
+    
 
     display: flex;
     align-content: center;
@@ -88,21 +108,67 @@ footer{
     color: white;
 }
 
+footer p{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
 
 
 nav a{
     flex-grow: 1;
     
 }
+#github-icono{
+    padding: ;
+}
+
+/* RESPONSIVE DESIGN */
+ @media screen and (max-width: 800px){
 
 
+    body{
+        display: grid;
+        /* border: 2px solid black; */
+        grid-template: 
+        "nav" 1.5%
+        "header" 3%
+        "main" 0.5fr
+        "aside" 0.9fr
+        "footer" 4%
+        /1fr 
+        ;
+     
+    }
 
+    header{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #carrousel-main{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perma-banner{
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    aside{
+        background-color: #bdebb873;
+    }
+  
+    
+
+    
+
+
+} 
 
 /* 
-.perma-banner{
-    position: fixed;
-    top: 0;
-    width: 100%
-}
+
 
 */
