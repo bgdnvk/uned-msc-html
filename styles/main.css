@@ -2,14 +2,13 @@
 @import "botones.css";
 @import "fonts.css";
 @import "contacto.css";
+@import "responsive-main.css";
 
+/* Estructura principal del doc
+usando grid */
 .index{
-    
     background-color: #d2f5cf73;
-
     display: grid;
-    
-
     grid-template: 
     "header header header" 7.5%
     "nav nav nav" 5%
@@ -17,7 +16,6 @@
     "footer footer footer" 4.5%
     /2fr 2fr 1fr 
     ;
- 
 }
 
 
@@ -27,48 +25,55 @@ header{
     justify-content: center;
     align-content: center;
 
+    padding-bottom: 65px;
 
     background-color:#003300;
     color: white;
 }
 
+/* barra de navegación que contiene los botones
+uso flex para repartir el espacio */
 nav{
     grid-area: nav;
     
     display: flex;
     justify-content: space-around;
-    
-    
 
     background-color: #1b5e20;
 }
 
-
+/* no sabía que poner por lo que decidí incluir
+lo que estaba en la web de uned valencia
+ */
 aside{
     grid-area: aside;
     padding: 0.8%;
     padding-top: 0;
     margin-bottom: 5%;
 }
-
+/* estas son las imagenes de la barra
+que esta en el lado derecho */
 #carousel-aside{
     display: flex;
 }
 
+/* contenido principal */
 main{
     grid-area: main;
 
-
     display: flex;
     flex-direction: column;
-
     
     height: fit-content;
     padding: 1%;
 }
+/* imagenes principales
+uso una simple grid para asegurar su compostura
 
+debería haber usado un sitio como figma o parecidos para determinar
+el diseño antes de hacer nada
+ */
 #carrousel-main{
-    
     display: grid;
     border: 1px solid #509556;
     grid-template: 
@@ -77,15 +82,15 @@ main{
     ;
 }
 
-
+/* simple nota de página para incluir
+un poco de info e incluir mi repo en github
+con el código fuente */
 footer{
     
     grid-area: footer;
     width: 100%;
 
     margin-top: 0.01%;
-    /* padding: 1%; */
-    
 
     display: flex;
     align-content: center;
@@ -103,18 +108,22 @@ footer p{
     margin-top: 1%;
 }
 
-
-
+/* aquí se espanden los botones 
+de la barra de navegación
+me aseguro que usan todo el espacio disponible*/
 nav a{
     flex-grow: 1;
     
 }
 
 
+/* esto no era parte del ejercicio pero hice
+un curso de responsive design hace poco y decidí ponerlo en práctica
+ */
 /* RESPONSIVE DESIGN */
  @media screen and (max-width: 800px){
-
-
+    /* vuelvo hacer una grid por no cambiar
+    pero en la siguiente página uso flex column */
     .index{
         display: grid;
         grid-template: 
@@ -135,7 +144,6 @@ nav a{
     }
 
     #carrousel-main{
-        
         display: flex;
         flex-direction: column;
     }
@@ -154,10 +162,6 @@ nav a{
         margin-top: 2%;
         margin-right: 2%;
     }
-    
-
-    
-
 
 } 
 
