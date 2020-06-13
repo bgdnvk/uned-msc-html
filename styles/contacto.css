@@ -1,0 +1,64 @@
+body.contacto{
+
+    background-color: #d2f5cf73;
+
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.grid-item.contacto{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* ajustado el header
+para que no se mueva al pasar de página */
+ header.contacto{
+    height: 115px;
+} 
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1050px){
+    .grid-item.contacto{
+        flex-direction: column;
+    }
+
+    .perma-banner{
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+    header{
+        padding-left: 3%;
+        padding-right: 3%;
+
+        margin-top: 5%;
+        position: relative;
+        top: 2.5%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .grid-item.contacto{
+        flex-direction: column;
+    }
+
+    .perma-banner{
+        position: fixed;
+        top: 0;
+        width: 100%
+
+    }
+    header{
+       
+        margin-top: 12.5%;
+        position: relative;
+        top: 2.5%;
+    }
+    /* se oculta el mapa si el navegador es demasiado pequeño */
+    #mapa{
+        display: none;
+    }
+}

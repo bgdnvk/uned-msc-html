@@ -1,13 +1,13 @@
 @import "imgs.css";
 @import "botones.css";
 @import "fonts.css";
+@import "contacto.css";
 
-body{
+.index{
     
     background-color: #d2f5cf73;
 
     display: grid;
-    /* border: 2px solid black; */
     
 
     grid-template: 
@@ -20,10 +20,6 @@ body{
  
 }
 
-.grid-item{
-     /* border: 2px solid black;  */
-     /* padding: 1%; */
-}
 
 header{
     grid-area: header;
@@ -69,15 +65,6 @@ main{
     
     height: fit-content;
     padding: 1%;
-    /* padding: 0.5%;
-    margin-bottom: 1px; */
-    
-    
-
-    
-    /* background-color: #d2f5cf73; */
-
-    
 }
 
 #carrousel-main{
@@ -102,36 +89,37 @@ footer{
 
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     background-color: #003300;
     color: white;
 }
 
 footer p{
-    margin-left: 0.5%;
-    margin-right: 0.5%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
+#github-icono{
+    margin-top: 1%;
+}
+
 
 
 nav a{
     flex-grow: 1;
     
 }
-#github-icono{
-    padding: ;
-}
+
 
 /* RESPONSIVE DESIGN */
  @media screen and (max-width: 800px){
 
 
-    body{
+    .index{
         display: grid;
-        /* border: 2px solid black; */
         grid-template: 
         "nav" 1.5%
-        "header" 3%
+        "header" 5%
         "main" 0.5fr
         "aside" 0.9fr
         "footer" 4%
@@ -143,6 +131,7 @@ nav a{
     header{
         padding-left: 3%;
         padding-right: 3%;
+        
     }
 
     #carrousel-main{
@@ -161,6 +150,10 @@ nav a{
         background-color: #bdebb873;
     }
   
+    #github-icono{
+        margin-top: 2%;
+        margin-right: 2%;
+    }
     
 
     
@@ -168,7 +161,3 @@ nav a{
 
 } 
 
-/* 
-
-
-*/
