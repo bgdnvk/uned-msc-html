@@ -6,5 +6,4 @@ Para darle un poco más de vida he usado Google Fonts y Font Awesome.
 
 La página esta hosteada usando netlify: https://loving-swanson-6132c1.netlify.app/
 
-Lighthouse rating:
 ![lighthouse rating](https://raw.githubusercontent.com/bgdnvk/uned-msc-html/master/media/lighthouse.png)
