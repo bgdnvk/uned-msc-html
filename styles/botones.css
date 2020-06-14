@@ -3,6 +3,23 @@ footer > a > button{
     color: black;
 }
 
+nav a:hover{
+    text-decoration: none;
+
+}
+
+nav a button:hover{
+    background-color: #00331a;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#carrousel-aside > a{
+    text-decoration: none;
+}
+
 button{
     width: 100%;
     height: 100%; 
