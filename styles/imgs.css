@@ -1,5 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
+/* icono de github de font awesome
+lo uso en el footer */
 .fa-github{
     color: white;
     font-size: 3rem;
@@ -7,21 +8,17 @@
 
 img{
     width: 100%;
-    /* height: 19%; */
 }
 
 .img-main{
-    
     height: 425px;
 
     border: 1px solid #1b5e20;
     background-color: #80c683;
 }
 
-
-
-
-
+/* decidi mover todas las imagenes aquí
+incluyendo las areas de grid */
 #img-camp-big{
     grid-area: a;
 }
