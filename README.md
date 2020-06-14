@@ -5,3 +5,6 @@ También he incluido responsive design.
 Para darle un poco más de vida he usado Google Fonts y Font Awesome.
 
 La página esta hosteada usando netlify: https://loving-swanson-6132c1.netlify.app/
+
+Lighthouse rating:
+![lighthouse rating](https://github.com/bgdnvk/uned-msc-html/tree/master/media/lighthouse.png?raw=true)
