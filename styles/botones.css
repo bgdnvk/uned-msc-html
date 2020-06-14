@@ -20,6 +20,13 @@ nav a{
     text-decoration: none;
 }
 
+#carrousel-aside > a:link{
+    color: black;
+}
+#carrousel-aside > a:visited{
+    color: #477249;
+}
+
 button{
     width: 100%;
     height: 100%; 
